@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Books & Reading Lists — An African Bookshelf | Kampala, Uganda</title>
-  <meta name="description" content="Explore the full 2026 reading list and archive of African-authored books read by An African Bookshelf in Kampala.">
+  <title>2026 Reading List — An African Bookshelf | Kampala, Uganda</title>
+  <meta name="description" content="Explore the full 2026 reading list of 12 African-authored books selected by An African Bookshelf bookclub in Kampala, Uganda.">
+  <meta name="keywords" content="African books 2026, African literature reading list, Kampala bookclub, East African authors">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2026 Reading List — An African Bookshelf">
+  <meta property="og:description" content="Explore the full 2026 reading list of African-authored books selected by our Kampala literary circle.">
+  <meta property="og:image" content="./images/logo.svg">
+
   <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
   <link rel="apple-touch-icon" href="./images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,25 +58,257 @@
     </div>
   </header>
 
-  <!-- Main Stub Content -->
+  <!-- Main Content -->
   <main id="main-content">
-    <section class="stub-section">
+    
+    <!-- Hero / Header -->
+    <section class="page-hero" aria-labelledby="page-title">
       <div class="container">
-        <div class="stub-card">
-          <div class="stub-badge">
-            <span class="badge badge-ochre">Coming Soon</span>
-          </div>
-          <h1 class="stub-title">Reading Lists &amp; Archive</h1>
-          <p class="stub-desc">
-            We are curating our complete reading list archive featuring 12 African-authored titles each year, discussion guides, author spotlights, and member reviews.
-          </p>
-          <div class="btn-group" style="justify-content: center;">
-            <a href="./index.html" class="btn btn-primary">&larr; Back to Home</a>
-            <a href="./index.html#current-read" class="btn btn-secondary">See Current Read</a>
-          </div>
+        <span class="section-kicker">Reading Archive</span>
+        <h1 id="page-title" class="page-hero-title">2026 Reading List</h1>
+        <p class="page-hero-lead">
+          Twelve African-authored books across twelve months. From contemporary fiction to historical classics, memoirs, and essays celebrating the depth of African storytelling.
+        </p>
+      </div>
+    </section>
+
+    <!-- Books Catalog Section -->
+    <section class="section" aria-label="Book Catalog">
+      <div class="container">
+        
+        <!-- Filter Controls -->
+        <div class="books-filter-bar" role="toolbar" aria-label="Filter books by status">
+          <button type="button" class="filter-btn active" data-filter="all">All Selections (10)</button>
+          <button type="button" class="filter-btn" data-filter="current">Currently Reading (1)</button>
+          <button type="button" class="filter-btn" data-filter="completed">Completed (9)</button>
+        </div>
+
+        <!-- Catalog Grid (Pre-rendered for instant viewing & SEO, enhanced with JS filtering) -->
+        <div class="books-catalog-grid" id="books-grid">
+
+          <!-- October 2026 (Current Read) -->
+          <article class="catalog-card is-current" data-status="current">
+            <div class="catalog-card-header">
+              <span class="badge badge-green">
+                <span class="hero-badge-dot" aria-hidden="true"></span>
+                Currently Reading
+              </span>
+              <span class="badge badge-ochre">October 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-brick" role="img" aria-label="Cover for Queenie by Candice Carty-Williams">
+                <span class="catalog-cover-spine">Oct 2026</span>
+                <span class="catalog-cover-title">Queenie</span>
+                <span class="catalog-cover-author">C. Carty-Williams</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">Queenie</h2>
+                <span class="catalog-card-author">by Candice Carty-Williams</span>
+                <p class="catalog-card-meta">Book 10 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- September 2026 -->
+          <article class="catalog-card" data-status="completed">
+            <div class="catalog-card-header">
+              <span class="badge badge-ochre">Completed</span>
+              <span class="badge badge-ochre">September 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-ochre" role="img" aria-label="Cover for Chronicles from the Land of the Happiest People on Earth by Wole Soyinka">
+                <span class="catalog-cover-spine">Sep 2026</span>
+                <span class="catalog-cover-title">Chronicles from the Land...</span>
+                <span class="catalog-cover-author">Wole Soyinka</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">Chronicles from the Land of the Happiest People on Earth</h2>
+                <span class="catalog-card-author">by Wole Soyinka</span>
+                <p class="catalog-card-meta">Book 9 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- August 2026 -->
+          <article class="catalog-card" data-status="completed">
+            <div class="catalog-card-header">
+              <span class="badge badge-ochre">Completed</span>
+              <span class="badge badge-ochre">August 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-green" role="img" aria-label="Cover for White Teeth by Okot p'Bitek">
+                <span class="catalog-cover-spine">Aug 2026</span>
+                <span class="catalog-cover-title">White Teeth</span>
+                <span class="catalog-cover-author">Okot p'Bitek</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">White Teeth</h2>
+                <span class="catalog-card-author">by Okot p'Bitek</span>
+                <p class="catalog-card-meta">Book 8 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- July 2026 -->
+          <article class="catalog-card" data-status="completed">
+            <div class="catalog-card-header">
+              <span class="badge badge-ochre">Completed</span>
+              <span class="badge badge-ochre">July 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-teal" role="img" aria-label="Cover for The Girl Child Has Seen Days by Ernest Bazanye">
+                <span class="catalog-cover-spine">Jul 2026</span>
+                <span class="catalog-cover-title">The Girl Child Has Seen Days</span>
+                <span class="catalog-cover-author">Ernest Bazanye</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">The Girl Child Has Seen Days</h2>
+                <span class="catalog-card-author">by Ernest Bazanye</span>
+                <p class="catalog-card-meta">Book 7 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- June 2026 -->
+          <article class="catalog-card" data-status="completed">
+            <div class="catalog-card-header">
+              <span class="badge badge-ochre">Completed</span>
+              <span class="badge badge-ochre">June 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-blue" role="img" aria-label="Cover for Slow Poison by Mahmood Mamdani">
+                <span class="catalog-cover-spine">Jun 2026</span>
+                <span class="catalog-cover-title">Slow Poison</span>
+                <span class="catalog-cover-author">Mahmood Mamdani</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">Slow Poison</h2>
+                <span class="catalog-card-author">by Mahmood Mamdani</span>
+                <p class="catalog-card-meta">Book 6 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- May 2026 -->
+          <article class="catalog-card" data-status="completed">
+            <div class="catalog-card-header">
+              <span class="badge badge-ochre">Completed</span>
+              <span class="badge badge-ochre">May 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-brick" role="img" aria-label="Cover for The Marriage Class by Adesuwa O'man Nwokedi">
+                <span class="catalog-cover-spine">May 2026</span>
+                <span class="catalog-cover-title">The Marriage Class</span>
+                <span class="catalog-cover-author">A. O'man Nwokedi</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">The Marriage Class</h2>
+                <span class="catalog-card-author">by Adesuwa O'man Nwokedi</span>
+                <p class="catalog-card-meta">Book 5 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- April 2026 -->
+          <article class="catalog-card" data-status="completed">
+            <div class="catalog-card-header">
+              <span class="badge badge-ochre">Completed</span>
+              <span class="badge badge-ochre">April 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-ochre" role="img" aria-label="Cover for Indaba, My Children by Credo Mutwa">
+                <span class="catalog-cover-spine">Apr 2026</span>
+                <span class="catalog-cover-title">Indaba, My Children</span>
+                <span class="catalog-cover-author">Credo Mutwa</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">Indaba, My Children</h2>
+                <span class="catalog-card-author">by Credo Mutwa</span>
+                <p class="catalog-card-meta">Book 4 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- March 2026 -->
+          <article class="catalog-card" data-status="completed">
+            <div class="catalog-card-header">
+              <span class="badge badge-ochre">Completed</span>
+              <span class="badge badge-ochre">March 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-green" role="img" aria-label="Cover for Where Rivers Go to Die by Dilman Dila">
+                <span class="catalog-cover-spine">Mar 2026</span>
+                <span class="catalog-cover-title">Where Rivers Go to Die</span>
+                <span class="catalog-cover-author">Dilman Dila</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">Where Rivers Go to Die</h2>
+                <span class="catalog-card-author">by Dilman Dila</span>
+                <p class="catalog-card-meta">Book 3 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- February 2026 -->
+          <article class="catalog-card" data-status="completed">
+            <div class="catalog-card-header">
+              <span class="badge badge-ochre">Completed</span>
+              <span class="badge badge-ochre">February 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-teal" role="img" aria-label="Cover for Someone Birthed Them Broken by Ama Asantewa Diaka">
+                <span class="catalog-cover-spine">Feb 2026</span>
+                <span class="catalog-cover-title">Someone Birthed Them Broken</span>
+                <span class="catalog-cover-author">Ama Asantewa Diaka</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">Someone Birthed Them Broken</h2>
+                <span class="catalog-card-author">by Ama Asantewa Diaka</span>
+                <p class="catalog-card-meta">Book 2 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- January 2026 -->
+          <article class="catalog-card" data-status="completed">
+            <div class="catalog-card-header">
+              <span class="badge badge-ochre">Completed</span>
+              <span class="badge badge-ochre">January 2026</span>
+            </div>
+            <div class="catalog-card-body">
+              <div class="catalog-book-cover theme-blue" role="img" aria-label="Cover for The Weavings of Ife by Author unknown">
+                <span class="catalog-cover-spine">Jan 2026</span>
+                <span class="catalog-cover-title">The Weavings of Ife</span>
+                <span class="catalog-cover-author">Author unknown</span>
+              </div>
+              <div class="catalog-card-details">
+                <h2 class="catalog-card-title">The Weavings of Ife</h2>
+                <span class="catalog-card-author">by Author unknown</span>
+                <p class="catalog-card-meta">Book 1 of 12 &bull; 2026 Cycle</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Suggestion / Join CTA -->
+    <section class="section section-warm">
+      <div class="container" style="text-align: center; max-width: 650px;">
+        <span class="section-kicker">Join the Conversation</span>
+        <h2>Read Along With Us</h2>
+        <p class="section-lead" style="margin-bottom: 2rem;">
+          Whether you are based in Kampala or reading with us from afar, all are welcome in our monthly discussions.
+        </p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="./membership.html" class="btn btn-primary">Join the Club</a>
+          <a href="./contact.html" class="btn btn-secondary">Suggest a Book for 2027</a>
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- Shared Footer -->
@@ -81,11 +320,16 @@
           <p class="footer-brand-desc">
             A Kampala-based literary community dedicated to reading, discussing, and celebrating African-authored books. 12 months, 12 African stories.
           </p>
-          <a href="https://www.instagram.com/anafricanbookshelf/" target="_blank" rel="noopener noreferrer" class="social-link-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <a href="https://www.instagram.com/anafricanbookshelf/" target="_blank" rel="noopener noreferrer" class="social-link-item" aria-label="Follow An African Bookshelf on Instagram (opens in a new tab)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
             <span>Follow @anafricanbookshelf</span>
           </a>
         </div>
+
         <div class="footer-links-col">
           <h3 class="footer-heading">Explore</h3>
           <ul class="footer-nav-list">
@@ -95,6 +339,7 @@
             <li><a href="./blog.html" class="footer-link">Blog & Essays</a></li>
           </ul>
         </div>
+
         <div class="footer-links-col">
           <h3 class="footer-heading">Get Involved</h3>
           <ul class="footer-nav-list">
@@ -105,6 +350,7 @@
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p>&copy; <span id="footer-year">2026</span> An African Bookshelf. Based in Kampala, Uganda.</p>
         <p>Built for readers everywhere across the continent &amp; diaspora.</p>
@@ -115,4 +361,3 @@
   <script src="./js/main.js"></script>
 </body>
 </html>
-
